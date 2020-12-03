@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "pug": "^3.0.0"
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.29.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/page/index.pug"
+    "dev": "parcel src/page/index.pug --open"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Romul';
+  src: url('../fonts/romul/romul.woff') format('woff'),
+    url('../fonts/romul/romul.ttf') format('truetype'),
+    url('../fonts/romul/romul.svg#Quicksand-Bold') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/montserrat-medium-webfont.woff') format('woff'),
+    url('../fonts/montserrat/montserrat-medium-webfont.ttf') format('truetype'),
+    url('../fonts/montserrat/montserrat-medium-webfont.svg#Montserrat-Bold') format('svg');
+  font-style: normal;
+  font-weight: 500;
+}
