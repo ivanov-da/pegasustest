@@ -1,5 +1,47 @@
 .header {
   &__order {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper-lines {
+    margin-top: 26px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__line {
+    width: 548px;
+    height: 1px;
+    background-color: $text-main;
+  }
+
+  &__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone {
+  }
+
+  &__messanger {
+  }
+
+  &__picture {
+    width: 213px;
+    height: 82px;
+    background-image: url(../components/header/logo.png);
+  }
+
+  &__button-tariff {
+  }
+
+  &__button-order {
   }
 
   &__menu {
