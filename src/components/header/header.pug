@@ -1,0 +1,19 @@
+-
+  let Menu = ['Главная', 'Услуги', 'Автопарк', 'События', 'О нас', 'Контакты',];
+
+mixin header(options)
+  header.header 
+    .header__order &[{}]
+    .header__menu
+      p.header__company Pegasus Luxury Services
+      .header__menu-item
+        a.header__link(href='/mock-adress')= Menu[0]
+
+      - let i = 1;
+      while (i < Menu.length)
+        .header__separator
+        .header__menu-item
+          a.header__link(href='/mock-adress')= Menu[i]
+        - i++;
+      .header__toggle
+        a.material-icons.header__burger dehaze

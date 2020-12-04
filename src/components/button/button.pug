@@ -1,0 +1,9 @@
+mixin button(options)
+  -
+    let buttonClass = 'button';
+    let isBig = options.isBig;
+    let isSecondary = options.isSecondary;
+    buttonClass += isBig == true ? ' button_big' : '';
+     buttonClass += isSecondary == true ? ' button_secondary' : '';
+  button(class= buttonClass)
+    span.button__title= options.title

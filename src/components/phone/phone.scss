@@ -1,0 +1,36 @@
+.phone {
+  max-width: -moz-max-content;
+  max-width: -webkit-max-content;
+  max-width: max-content;
+
+  &__number {
+    color: $text-main;
+    font-family: $montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  &__text {
+    color: $text-secondary;
+    font-family: $montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.63px;
+  }
+
+  &__divide {
+    width: 39px;
+    height: 1px;
+    background-color: $text-secondary;
+  }
+}

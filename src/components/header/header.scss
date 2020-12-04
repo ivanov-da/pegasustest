@@ -1,0 +1,91 @@
+.header {
+  &__order {
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $text-main;
+
+    @media (min-width: 960px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__company {
+    color: $white;
+    font-family: $romul;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0;
+
+    @media (min-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__menu-item {
+    order: 2;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    font-family: $romul;
+    color: $white;
+
+    @media (min-width: 960px) {
+      display: block;
+      padding: 18px 0;
+      width: auto;
+      order: 0;
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__separator {
+    display: none;
+
+    @media (min-width: 960px) {
+      display: block;
+      width: 1px;
+      height: 20px;
+      margin: 0 3.5%;
+      background-color: $white;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-family: $romul;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.36px;
+
+    &:hover {
+      color: $text-secondary;
+    }
+  }
+
+  &__toggle {
+    order: 1;
+
+    @media (min-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    font-style: normal;
+    cursor: pointer;
+    color: $white;
+  }
+}
