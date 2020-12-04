@@ -1,0 +1,15 @@
+include ../button/button.pug
+
+mixin card(options)
+  .card
+    .card__picture(style=`background-image: url(${options.imageUrl});`)
+    .card__title= options.title
+    .card__separator
+    .card__text-one= options.textOne
+    .card__text-two= options.textTwo
+    .card__button
+      +button({
+      isBig: true,
+      isSecondary: false,
+      title: 'подробнее'
+    })
