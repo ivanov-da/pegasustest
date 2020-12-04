@@ -15,12 +15,27 @@ html
   body.pegasus
     .pegasus__header
       +header()
-    section.pegasus__content
-      +card({
-        imageUrl: 'images/1.png',
-        title: 'elevate you experience',
-        textOne: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-        textTwo: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
-      })
+    .pegasus__wrapper
+      section.pegasus__content
+        .pegasus__pagination
+          p.pegasus__page-one Главная  |
+          p.pegasus__page-two События  |
+          p.pegasus__page-active Экскурсии
+        .pegasus__horizontal-separator
+        .pegasus__title
+          .pegasus__title-text pegasus luxury services
+          .pegasus__page
+            .pegasus__vertical-separator
+            .pegasus__page-name экскурсии
+            .pegasus__vertical-separator
+          .pegasus__text-one Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .pegasus__text-two Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.
+        .pegasus__cards
+          +card({
+            imageUrl: 'images/1.png',
+            title: 'elevate you experience',
+            textOne: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            textTwo: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
+          })
 
   script(src='./index.js')
