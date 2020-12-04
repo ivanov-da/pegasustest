@@ -3,7 +3,36 @@
 
 mixin header(options)
   header.header 
-    .header__order &[{}]
+    .header__order
+      .header__wrapper-lines
+        .header__line
+        .header__line
+      .header__wrapper-content
+        .header__phones
+          .header__phone
+            +phone({
+              number: '+44 20 7719 8816',
+              text: 'круглосуточно'
+            })
+          .header__messanger
+            +phone({
+              number: '+44 777 100 7676',
+              text: 'Viber & WhatsUp'
+            })
+        .header__picture
+        .header__buttons  
+          .header__button-tariff
+            +button({
+              isBig: false,
+              isSecondary: false,
+              title: 'узнать тариф'
+            })
+          .header__button-order
+            +button({
+              isBig: false,
+              isSecondary: true,
+              title: 'сделать заказ'
+            })
     .header__menu
       p.header__company Pegasus Luxury Services
       .header__menu-item

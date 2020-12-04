@@ -1,0 +1,51 @@
+@import "../components/button/button.scss";
+
+.card {
+  max-width: 555px;
+
+  &__picture {
+    width: 100%;
+    height: 235px;
+  }
+
+  &__title {
+    color: $text-main;
+    font-family: $romul;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-top: 24px;
+  }
+
+  &__separator {
+    width: 90px;
+    height: 1px;
+    background-color: $text-secondary;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__text-one,
+  &__text-two {
+    color: $text-main;
+    font-family: $montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__text-one {
+    margin-top: 24px;
+  }
+
+  &__text-two {
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    max-width: 275px;
+  }
+}
