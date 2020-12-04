@@ -1,7 +1,11 @@
-@import 'common/fonts.scss';
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/normalize.scss";
+@import "../components/button/button.scss";
+@import "../components/phone/phone.scss";
 
-h1 {
-  color:yellowgreen;
-  font-family: Romul;
-  font-weight: 400;
+.wrap {
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
 }
