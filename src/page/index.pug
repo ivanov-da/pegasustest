@@ -2,6 +2,8 @@ include ../components/button/button.pug
 include ../components/phone/phone.pug
 include ../components/header/header.pug
 include ../components/card/card.pug
+include ../components/footer/footer.pug
+
 
 -
   let cardTitles = ['elevate you experience', 
@@ -54,5 +56,7 @@ html
                   textTwo: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
                 })
             - j++;
+    .pegasus__footer
+      +footer()
 
   script(src='./index.js')

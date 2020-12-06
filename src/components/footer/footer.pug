@@ -1,0 +1,30 @@
+mixin nav(options)
+  .nav
+    .nav__title= options.title
+    .nav__separator
+    each val in options.list
+      p.nav__item
+        a.nav__link(href='/mock-adress')= val
+
+
+
+mixin footer(options)
+  .footer
+    .footer__content
+      .footer__nav
+        +nav({
+          title: 'наши машины',
+          list: ['Mercedes S-Class', 'Mercedes V-Class', 'Mercedes E-Class', 'Rolls-Royce Ghost', 'Rolls-Royce Phantom', 'Bentley Mulsanne',]
+        })
+      .footer__nav
+        +nav({
+          title: 'наш сервис',
+          list: ['Корпоративное такси', 'Личный водитель', 'Бизнес встречи', 'Аэропорты', 'События', 'Экскурсии',]
+        })
+      .footer__nav
+        +nav({
+          title: 'о нас',
+          list: ['Правила и условия', 'О нас', 'Аэропорты', 'Контакты', 'Блог', 'Автопарк',]
+        })
+      .footer__order
+      .footer__rights
