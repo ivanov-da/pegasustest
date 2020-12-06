@@ -6,16 +6,46 @@
   //background-position: center center;
 
   &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1165px;
+    margin: 0 auto;
+    padding-top: 39px;
   }
 
   &__nav {
     margin-left: 50px;
   }
 
+  &__separator {
+    width: 1px;
+    height: 132px;
+    background-color: $white;
+    align-self: flex-end;
+
+    &_ending {
+      width: 1px;
+      height: 201px;
+      background-color: $white;
+    }
+  }
+
   &__order {
+    width: 185px;
+    height: 202px;
+    background-color: white;
   }
 
   &__rights {
+    max-width: 965px;
+    margin: 45px auto 30px;
+    opacity: 0.3;
+    color: $white;
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
   }
 }
 

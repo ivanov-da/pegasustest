@@ -16,15 +16,30 @@ mixin footer(options)
           title: 'наши машины',
           list: ['Mercedes S-Class', 'Mercedes V-Class', 'Mercedes E-Class', 'Rolls-Royce Ghost', 'Rolls-Royce Phantom', 'Bentley Mulsanne',]
         })
+      .footer__separator
       .footer__nav
         +nav({
           title: 'наш сервис',
           list: ['Корпоративное такси', 'Личный водитель', 'Бизнес встречи', 'Аэропорты', 'События', 'Экскурсии',]
         })
+      .footer__separator
       .footer__nav
         +nav({
           title: 'о нас',
           list: ['Правила и условия', 'О нас', 'Аэропорты', 'Контакты', 'Блог', 'Автопарк',]
         })
+      .footer__separator.footer__separator_ending
       .footer__order
-      .footer__rights
+        p.footer__make-order Сделать заказ
+        .footer__order-separator
+        p.footer__make-order Узнать тариф
+        .footer__order-separator
+        .footer__social
+          p.footer__number +44 020 7719 8816
+          p.footer__text круглосуточно
+          p.footer__number +44 777 100 7676
+          p.footer__text Viber & WhatsUp
+          .footer___social-links
+            
+
+    p.footer__rights 2010-2018 ©Pegasus Luxury Services Ltd. Company Number: 08104782. PCO-Operator Licence: 0086810101. All rights reserved.
