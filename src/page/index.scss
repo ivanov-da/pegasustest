@@ -5,6 +5,7 @@
 @import "../components/phone/phone.scss";
 @import "../components/header/header.scss";
 @import "../components/card/card.scss";
+@import "../components/footer/footer.scss";
 
 .pegasus {
   min-width: 320px;
@@ -19,6 +20,7 @@
     max-width: 1170px;
     min-width: 320px;
     margin: 0 auto;
+    margin-bottom: 51px;
   }
 
   &__pagination {
@@ -37,6 +39,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.63px;
+    cursor: pointer;
   }
 
   &__page-two {
@@ -104,7 +107,7 @@
   }
 
   &__text-one {
-    margin-top: 21px;
+    margin-top: 24px;
   }
 
   &__text-two {
@@ -112,5 +115,23 @@
   }
 
   &__cards {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__cards {
+    margin-top: 50px;
+  }
+
+  &__card {
+    @media (max-width: 1110px) {
+      margin: 0 auto;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 40px;
+    }
   }
 }
