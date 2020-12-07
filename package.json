@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/page/index.pug --open",
-    "build": "parcel build src/page/index.pug --out-dir build --global index --public-url ./ --no-source-maps"
+    "build": "parcel build src/page/index.pug --out-dir docs --global index --public-url ./ --no-source-maps"
   },
   "keywords": [],
   "author": "",
